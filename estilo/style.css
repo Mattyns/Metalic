@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:#123B73;
+    --cor2:#464B52;
+    --cor3:#6386B8;
+    --cor4:#222933;
+    --cor5:#172333;
+    --cor6:#0e1f34;
+    --cor7:#1669d5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    padding: 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.967);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 300px;
+    height: 80px;
+}
+
+.logo__img {
+    object-fit: cover;
+    width: 250px;
+    height: 80px;
+}
+
+.menu {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.menu__list {
+    font-size: 3em;
+    color: white;
+}
+
+.heros {
+    background-image: url('../img/dark2-bg.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 420px;
+    
+
+}
+
+.heros__text {
+    color: white;
+    padding:30px 8px;
+    font-size: 1.5em;
+    width: 85%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+strong {
+    color: var(--cor1);
+}
+
+.button {
+    
+    width: fit-content;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid white;
+    border-radius: 20px;
+    
+    
+
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button--redirect {
+    background-color: rgba(0, 0, 0, 0.711);
+    color: var(--cor7);
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.button--redirect:hover {
+    background-color: black;
+    padding: 12px;
+    border:1px solid #1669d5;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.688);
+}
+
+.about {
+    margin-bottom: 40px;
+}
+
+.about__card {
+    
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.about__tittle {
+    font-size: 2em;
+    color: black;
+    margin: 5px 0px;
+}
+
+.about__subtittle {
+    font-size: 1.2em;
+    margin: 2px 0px;
+}
+
+.about__text {
+    margin: 30px 0px;
+    font-size: 1.1em;
+}
+
+.more__link {
+    color:var(--cor1);
+}
+
+.services {
+    
+    background-color: black;
+    padding-bottom: 40px;
+}
+
+.services__maintitle {
+    color: white;
+    padding: 20px 15px;
+    padding-bottom: 0px;
+}
+
+
+.services__area {
+    color: white;
+    width: 100% ;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+.services__card {
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+    border-radius: 10%;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+.services__title {
+    text-align: center;
+    color: var(--cor1);
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.services__text {
+    text-align: center;
+    padding: 10px;
+}
+
+.icon {
+    font-size: 3em;
+    color: var(--cor2);
+    display: block;
+    text-align: center;
+}
+
+.agende {
+    color: white;
+    background-image: url(../img/dark2-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+.agende__card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.085);
+    padding: 10px;
+    text-align: center;
+}
+
+.agende__title {
+    text-align: center;
+    margin: 2px;
+    margin-top: 20px;
+}
+
+.agende__text {
+    margin: 2px;
+}
+
+.agende__button {
+    justify-content: center;
+    margin: 15px auto;
+    background-color: var(--cor1);
+    border: 0;
+    
+}
+
+.clients {
+    background-color: white;
+}
+
+.clients__title {
+    margin: 0px 20px;
+    margin-top: 40px;
+}
+
+.client__card {
+    padding: 5px;
+    height: 150px;
+    margin: 0px 5px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    background-color: #1669d526;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.client__img--align {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.client__img {
+    width: 80%;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.client__msg {
+    display: flex;
+    flex-direction: column;
+    
+    align-self: center;
+    
+}
+
+.client__text {
+    margin: 5px 0px;
+}
+
+.client__cite {
+    grid-column: 2;
+    
+}
+
+
+
