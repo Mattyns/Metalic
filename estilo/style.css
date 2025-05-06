@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'link';
+    src: url(../fonts/link.ttf);
+}
+
+@font-face {
+    font-family: 'bodyf';
+    src: url(../fonts/bodyf.ttf);
+}
+
 :root {
     --cor1:#123B73;
     --cor2:#464B52;
@@ -8,6 +18,13 @@
     --cor5:#172333;
     --cor6:#0e1f34;
     --cor7:#1669d5;
+
+    --font-link: 'link';
+    --font-body: 'bodyf'
+}
+
+a {
+    font-family: var(--font-link);
 }
 
 * {
@@ -25,6 +42,10 @@ header {
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .logo {
@@ -53,6 +74,51 @@ a {
     color: white;
 }
 
+/*menu escondido*/
+
+.menu__phone {
+    display: none;
+    
+
+
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 100px;
+    right: 0;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid white;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 0px 0px 0px 10px;
+    
+
+}
+
+.menu__phone li {
+    margin: 8px;
+}
+
+
+
+.menu__visible a {
+    color: white;
+    font-size: 1.2em;
+    color: var(--cor7);
+}
+
+.menu__visible--special {
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.menu__visible--special a {
+    color: var(--cor7);
+}
+
+/*menu escondido*/
+
 .heros {
     background-image: url('../img/dark2-bg.jpg');
     background-position: top;
@@ -68,7 +134,7 @@ a {
     font-size: 1.5em;
     width: 85%;
     margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 
 strong {
@@ -231,6 +297,7 @@ strong {
 
 .clients {
     background-color: white;
+    padding-bottom: 50px;
 }
 
 .clients__title {
@@ -285,5 +352,52 @@ strong {
     
 }
 
+footer {
+    background-color: black;
+    margin-top: 40px;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: -50px;
+}
+
+footer p {
+    margin: 5px 10px;
+}
+
+.logo__footer {
+    width: 200px;
+    height: 80px;
+    
+}
+
+.logo__imgfooter {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.redes {
+    margin:10px;
+}
+
+.redes i {
+    color: white;
+    margin: 3px;
+    font-size: 1.5em;
+}
+
+.menufooter {
+    margin: 10px;
+}
+
+.menufooter ul {
+    margin: 10px 0px;
+    list-style: none;
+    
+}
+
+.menufooter ul a {
+    color: var(--cor7);
+}
 
 
