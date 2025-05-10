@@ -10,6 +10,11 @@
     src: url(../fonts/bodyf.ttf);
 }
 
+@font-face {
+    font-family: 'plus';
+    src: url(../fonts/plus.otf);
+}
+
 :root {
     --cor1:#123B73;
     --cor2:#464B52;
@@ -18,9 +23,11 @@
     --cor5:#172333;
     --cor6:#0e1f34;
     --cor7:#1669d5;
+    --cor8:#e9edf1;
 
     --font-link: 'link';
-    --font-body: 'bodyf'
+    --font-body: 'bodyf';
+    --font-body2: 'plus';
 }
 
 a {
@@ -35,9 +42,10 @@ a {
 
 
 header {
-    padding: 10px;
+    padding: 2px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.967);
+    z-index: 10;
 }
 
 a {
@@ -49,28 +57,33 @@ li {
 }
 
 .logo {
-    width: 300px;
-    height: 80px;
+    width: 200px;
+    height: 72px;
+    
+    
 }
 
 .logo__img {
     object-fit: cover;
-    width: 250px;
-    height: 80px;
+    width: 180px;
+    height: 72px;
 }
 
 .menu {
-    width: 100px;
-    height: 80px;
+    
+    flex: 2;
+    width: 40px;
+    height: 72px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    margin: 0 15px;
     
     
 }
 
 .menu__list {
-    font-size: 3em;
+    font-size: 2em;
     color: white;
 }
 
@@ -78,12 +91,13 @@ li {
 
 .menu__phone {
     display: none;
+    z-index: 1;
     
 
 
     position: absolute;
     background-color: rgb(0, 0, 0);
-    top: 100px;
+    top: 76px;
     right: 0;
     font-size: 1.5em;
     padding: 10px;
@@ -123,18 +137,20 @@ li {
     background-image: url('../img/dark2-bg.jpg');
     background-position: top;
     background-size: cover;
-    height: 420px;
+    height: 320px;
+    
     
 
 }
 
 .heros__text {
     color: white;
-    padding:30px 8px;
-    font-size: 1.5em;
+    padding:30px 2px;
+    font-size: 1.2em;
     width: 85%;
     margin: auto;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-body);
+    
 }
 
 strong {
@@ -145,7 +161,7 @@ strong {
     
     width: fit-content;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     border: 1px solid white;
     border-radius: 20px;
     
@@ -169,7 +185,78 @@ strong {
     background-color: black;
     padding: 12px;
     border:1px solid #1669d5;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.688);
+    box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.688);
+}
+
+.email1 {
+    display: none;
+    z-index: 1000;
+    
+    position: fixed;
+    background-color: var(--cor8);
+    width: 90%;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    top: 5vh;
+}
+
+.exit__form {
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.email1__title {
+    margin: 10px 0px;
+
+}
+
+.email1__form {
+    margin-top: 10px;
+    
+}
+
+.f__text::placeholder, .f__text--2::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.f__text {
+    width: 90%;
+    padding:5px;
+    margin: 3px 10px;
+    border-radius: 50px;
+    border: 1px solid var(--cor2);
+    
+}
+
+.f__text--2 {
+    width: 90%;
+    height: 50%;
+    padding:5px;
+    padding-bottom: 50px;
+    margin: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--cor2);
+    
+}
+
+.f__submit {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: var(--font-body2);
+
+    background-color: #1669d53f;
 }
 
 .about {
@@ -204,7 +291,7 @@ strong {
 }
 
 .services {
-    
+    font-size: 14px;
     background-color: black;
     padding-bottom: 40px;
 }
@@ -222,7 +309,7 @@ strong {
     margin: auto;
     position: relative;
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:50% 50%;
     gap: 0;
     justify-content: center;
     justify-items: center;
@@ -238,7 +325,8 @@ strong {
     border-radius: 10%;
     display: block;
     margin-top: 20px;
-    padding: 10px;
+    padding: 5px;
+    
     
 }
 
@@ -266,6 +354,7 @@ strong {
     background-image: url(../img/dark2-bg.jpg);
     background-size: cover;
     background-position: bottom;
+    font-family: var(--font-body);
     
 }
 
@@ -309,7 +398,7 @@ strong {
     padding: 5px;
     height: 150px;
     margin: 0px 5px;
-    margin-top: 40px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     

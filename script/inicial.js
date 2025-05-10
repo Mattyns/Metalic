@@ -16,3 +16,20 @@ function hidemenu() {
     menulist.addEventListener('click', showmenu)
     
 }
+
+
+
+var btn_redirect = document.querySelector('.button--redirect')
+var email1 = document.querySelector('.email1')
+var exit_form = document.querySelector('.exit__form')
+btn_redirect.addEventListener('click', displayemail1)
+exit_form.addEventListener('click', exitemail)
+
+function displayemail1() {
+    email1.style.display = 'block'
+
+}
+
+function exitemail() {
+    email1.style.display = 'none'
+}
