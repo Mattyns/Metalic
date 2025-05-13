@@ -22,6 +22,7 @@
 
 .more {
     padding: 15px;
+    padding-bottom: 40px;
 }
 
 .more__title {
@@ -38,5 +39,5 @@
 
 .more__footer {
     margin-top: 0px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
