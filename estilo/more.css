@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.about__complete {
+    margin-top: 0px;
+    padding: 0px 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+.about__tittle--com {
+    color: white;
+}
+
+.about__subtittle--com {
+    color: white;
+}
+
+.about__text--com {
+    color: white;
+}
+
+.more {
+    padding: 15px;
+}
+
+.more__title {
+    margin:10px 0px ;
+}
+
+.more__text {
+    margin: 10px 0px;
+}
+
+.more__img {
+    width: 100%;
+}
+
+.more__footer {
+    margin-top: 0px;
+    padding-top: 40px;
+}
