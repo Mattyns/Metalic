@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="estilo/more.css">
-</head>
+    <link rel="stylesheet" href="estilo/all-services.css">
 <body>
     <header>
         <div class="logo"><img src="img/Metalic.png" alt="logo" class="logo__img"></div>
@@ -20,7 +21,7 @@
             <ul class="menu__visible">
                 <li><a href="index.html" class="menu__link">Home</a></li>
                 <li><a href="#" class="menu__link">Monitoramento</a></li>
-                <li><a href="#" class="menu__link">Rondas</a></li>
+                <li><a href="#" class="menu__link menu__link--select">Rondas</a></li>
                 <li><a href="#" class="menu__link">Segurança Eletrônica</a></li>
                 <li><a href="#" class="menu__link">Controle de Acesso</a></li>
             </ul>
@@ -32,25 +33,22 @@
         </nav>
     </header>
 
+
     <main>
-        <section class="about__complete">
-            <h1 class="about__tittle about__tittle--com">Metalic Security</h1>
-                <h2 class="about__subtittle about__subtittle--com">Com mais de 20 anos de experiência na área</h2>
-                <p class="about__text about__text--com">A Metalic Security é referência em soluções de segurança patrimonial e eletrônica. Atendendo empresas, condomínios, comércios e residências, oferecemos serviços de alta qualidade com foco total na proteção de pessoas e bens.</p>
-                    
-                <p class="about__text about__text--com">Nosso compromisso vai além da tecnologia: trabalhamos com uma equipe altamente treinada, equipamentos modernos e um atendimento humanizado e eficiente. Cada cliente é único, por isso desenvolvemos soluções sob medida, integrando monitoramento 24 horas, rondas presenciais, segurança eletrônica e controle de acesso em um sistema completo e confiável.</p>
-                    
-                <p class="about__text about__text--com">A confiança conquistada ao longo de duas décadas é resultado da nossa dedicação, responsabilidade e busca contínua por inovação. Na Metalic Security, segurança não é apenas um serviço — é a nossa missão.</p>
+        <section class="allservices__ main">
+            <div class="allservices--destaque">
+                <h1 class="allservices__title">Segurança Eletrônica</h1>
+                <p class="allservices__text--destaque">A Segurança Eletrônica da Metalic Security oferece um conjunto completo de tecnologias integradas para proteger residências, empresas e condomínios com eficiência, precisão e monitoramento inteligente.</p>
+            </div>
+            <img src="img/segurança.png" alt="Segurança Eletrônica" class="allservices__img">
+
+            <p class="allservices__text">Trabalhamos com os melhores equipamentos do mercado, como sistemas de CFTV (circuito fechado de TV), alarmes perimetrais, sensores de presença, cercas elétricas e controle remoto de acessos, todos instalados por técnicos qualificados e conforme as normas de segurança.</p>
+
+            <p class="allservices__text">Nossos sistemas são personalizados para cada ambiente, com foco na prevenção de invasões, detecção rápida de ameaças e resposta automatizada a eventos suspeitos. Além disso, oferecemos acesso remoto via aplicativo, para que o cliente possa acompanhar tudo em tempo real, de onde estiver.</p>
+
+            <p class="allservices__text">Aliando tecnologia de ponta, monitoramento inteligente e suporte técnico especializado, a Metalic Security garante soluções seguras, modernas e eficazes para quem busca proteção com alto desempenho e confiabilidade.</p>
         </section>
 
-        <section class="more">
-            <h1 class="more__title">A origem do nome Metalic Security</h1>
-            <p class="more__text">A inspiração para o nome Metalic Security surgiu da ideia de criar uma marca que transmitisse força, resistência e proteção — valores essenciais no setor de segurança.</p>
-            <p class="more__text">O termo "Metalic" remete ao metal, um material sólido, confiável e durável, simbolizando a robustez dos nossos serviços e a firmeza do nosso compromisso com a segurança dos clientes. Já "Security" reforça diretamente nossa missão: oferecer proteção com tecnologia, estratégia e presença.</p>
-            <img src="img/security.png" alt="Segurança" class="more__img">
-            <p class="more__text">Desde o início, a Metalic Security nasceu com o propósito de ser um escudo moderno contra ameaças, combinando a solidez do nome com a agilidade e inovação dos serviços prestados. O nome carrega nossa essência: seriedade, confiança e proteção inabalável.</p>
-        </section>
-        </section>
         <section class="agende">
             <div class="agende__card">
                 <h2 class="agende__title">Agende um orçamento sem compromisso</h2>
@@ -74,7 +72,10 @@
 
             </div>
         </section>
-        <footer class="more__footer">
+    </main>
+
+
+    <footer>
                 <div class="logo__footer">
                     <img src="img/Metalic3.png" alt="logo" class="logo__imgfooter">
                 </div>
@@ -107,12 +108,9 @@
 
                 </section>
             </footer>
-    </main>
-    
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/inicial.js"></script>
-    <script src="script/more.js"></script>
+    <script src="script/allservices.js"></script>
 </body>
 </html>

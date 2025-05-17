@@ -18,13 +18,14 @@
         </div>
         <nav class="menu__phone">
             <ul class="menu__visible">
-                <li><a href="#" class="menu__link">Monitoramento</a></li>
-                <li><a href="#" class="menu__link">Rondas</a></li>
-                <li><a href="#" class="menu__link">Segurança Eletrônica</a></li>
-                <li><a href="#" class="menu__link">Controle de Acesso</a></li>
+                <li><a href="#" class="menu__link menu__link--select">Home</a></li>
+                <li><a href="monito.html" class="menu__link">Monitoramento</a></li>
+                <li><a href="rondas.html" class="menu__link">Rondas</a></li>
+                <li><a href="security.html" class="menu__link">Segurança Eletrônica</a></li>
+                <li><a href="control.html" class="menu__link">Controle de Acesso</a></li>
             </ul>
             <ul class="menu__visible--special">
-                <li><a href="#" class="menu__link--special">Trabalhe Conosco</a></li>
+                <li><a href="trabalhe.html" class="menu__link--special">Trabalhe Conosco</a></li>
                 <li><a href="#" class="menu__link--special">Nossos Parceiros</a></li>
                 <li><a href="#" class="menu__link--special">Guia de Segurança</a></li>
             </ul>
@@ -66,30 +67,39 @@
         <section class="services">
             <h1 class="services__maintitle">Serviços</h1>
             <div class="services__area">
-                <div class="services__card">
-                    <i class="bi-eye-fill icon icon--eye"></i>
-                    <h2 class="services__title">Monitoramento 24 Horas</h2>
-                    <p class="services__text">Proteção 24/7 com resposta rápida e equipe especializada.</p>
+
+                <a href="monito.html" class="services__link">
+                    <div class="services__card">
+                        <i class="bi-eye-fill icon icon--eye"></i>
+                        <h2 class="services__title">Monitoramento 24 Horas</h2>
+                        <p class="services__text">Proteção 24/7 com resposta rápida e equipe especializada.</p>
                     
-                </div>
-                <div class="services__card">
-                    <i class="bi-shield-fill-check icon icon--shield"></i>
-                    <h2 class="services__title">Rondas Presenciais</h2>
-                    <p class="services__text">Vigilância ativa com rondas preventivas no local.</p>
+                    </div>
+                </a>
+                <a href="" class="services__link">
+                    <div class="services__card">
+                        <i class="bi-shield-fill-check icon icon--shield"></i>
+                        <h2 class="services__title">Rondas Presenciais</h2>
+                        <p class="services__text">Vigilância ativa com rondas preventivas no local.</p>
                     
-                </div>
-                <div class="services__card">
-                    <i class="bi-camera-video-fill icon icon--cam"></i>
-                    <h2 class="services__title">Segurança Eletrônica</h2>
-                    <p class="services__text">Câmeras, alarmes e sistemas integrados para sua segurança.</p>
+                    </div>
+                </a>
+                <a href="" class="services__link">
+                    <div class="services__card">
+                        <i class="bi-camera-video-fill icon icon--cam"></i>
+                        <h2 class="services__title">Segurança Eletrônica</h2>
+                        <p class="services__text">Câmeras, alarmes e sistemas integrados para sua segurança.</p>
                     
-                </div>
-                <div class="services__card">
-                    <i class="bi-fingerprint icon icon--fingerprint"></i>
-                    <h2 class="services__title">Controle de Acesso</h2>
-                    <p class="services__text">Controle seguro e prático de entradas e saídas.</p>
+                    </div>
+                </a>
+                <a href="" class="services__link">
+                    <div class="services__card">
+                        <i class="bi-fingerprint icon icon--fingerprint"></i>
+                        <h2 class="services__title">Controle de Acesso</h2>
+                        <p class="services__text">Controle seguro e prático de entradas e saídas.</p>
                     
-                </div>
+                    </div>
+                </a>
                 
             </div>
         </section>
@@ -97,7 +107,22 @@
             <div class="agende__card">
                 <h2 class="agende__title">Agende um orçamento sem compromisso</h2>
                 <p class="agende__text">Solicite agora uma consultoria com um de nossos agentes e faça um orçamento totalmente grátis sem compromisso</p>
-                <div class="button agende__button">AGENDAR ORÇAMENTO</div>
+                <div class="button agende__button" id="btn__agende">AGENDAR ORÇAMENTO</div>
+
+                <div class="email1">
+                <i class="bi-x exit__form"></i>
+                <h2 class="email1__title">Fale com um Profissional</h2>
+                <p class="email1__text">Precisa de ajuda ou quer saber mais? Fale com um de nossos representantes e tire suas dúvidas com agilidade e confiança.</p>
+
+                <form class="email1__form">
+                    <input type="text" name="f__name" id="f__name" class="f__text" placeholder="Nome">
+                    <input type="email" name="f__mail" id="f__mail" class="f__text" placeholder="Email">
+                    <input type="tel" name="f__phone" id="f__phone" class="f__text" placeholder="Telefone">
+                    <textarea name="f__msg" id="f__msg" class="f__text--2" placeholder="Mensagem"></textarea>
+                    <input type="submit" class="f__submit" value="ENVIAR">
+                    
+                </form>
+            </div>
 
             </div>
         </section>

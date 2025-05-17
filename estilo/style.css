@@ -131,6 +131,11 @@ li {
     color: var(--cor7);
 }
 
+.menu__link--select {
+    color:white !important;
+    
+}
+
 /*menu escondido*/
 
 .heros {
@@ -191,14 +196,14 @@ strong {
 .email1 {
     display: none;
     z-index: 1000;
-    
+    color: black;
     position: fixed;
     background-color: var(--cor8);
-    width: 90%;
+    width: 85%;
     margin: auto;
     left: 50%;
     transform: translate(-50%, -0%);
-    padding:15px 8px;
+    padding:15px 18px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     border: 1px solid black;
@@ -216,6 +221,7 @@ strong {
 
 .email1__title {
     margin: 10px 0px;
+    font-size: 1.3em;
 
 }
 
@@ -229,7 +235,7 @@ strong {
 }
 
 .f__text {
-    width: 90%;
+    width: 96%;
     padding:5px;
     margin: 3px 10px;
     border-radius: 50px;
@@ -238,7 +244,7 @@ strong {
 }
 
 .f__text--2 {
-    width: 90%;
+    width: 96%;
     height: 50%;
     padding:5px;
     padding-bottom: 50px;
@@ -319,17 +325,19 @@ strong {
 
 }
 
-.services__card {
+.services__link {
     width: 90%;
     height: 90%;
     border: 1px solid white;
     border-radius: 10%;
     display: block;
     margin-top: 20px;
-    padding: 5px;
-    
-    
+    padding: 4px;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 .services__title {
     text-align: center;
@@ -341,6 +349,7 @@ strong {
 .services__text {
     text-align: center;
     padding: 10px;
+    color: white;
 }
 
 .icon {
@@ -477,8 +486,10 @@ footer p {
 }
 
 .menufooter {
-    margin: 10px;
+    margin: 15px;
+    margin-top: 30px;
 }
+
 
 .menufooter ul {
     margin: 10px 0px;

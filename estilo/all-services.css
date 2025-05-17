@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'link';
+    src: url(../fonts/link.ttf);
+}
+
+@font-face {
+    font-family: 'bodyf';
+    src: url(../fonts/bodyf.ttf);
+}
+
+@font-face {
+    font-family: 'plus';
+    src: url(../fonts/plus.otf);
+}
+
+:root {
+    --cor1:#123B73;
+    --cor2:#464B52;
+    --cor3:#6386B8;
+    --cor4:#222933;
+    --cor5:#172333;
+    --cor6:#0e1f34;
+    --cor7:#1669d5;
+    --cor8:#e9edf1;
+
+    --font-link: 'link';
+    --font-body: 'bodyf';
+    --font-body2: 'plus';
+}
+
+
+.allservices__main {
+    background-color: white;
+    
+}
+
+.allservices--destaque {
+    background-color: black;
+    padding: 20px;
+    font-family:var(--font-body) ;
+}
+
+.allservices__title {
+    color: white;
+    margin: 10px 0px;
+}
+
+.allservices__text--destaque {
+    color: white;
+    
+}
+
+.allservices__text {
+    background-color: white;
+    padding:0px 20px;
+    margin: 15px 0px;
+}
+
+.allservices__img {
+    width: 100%;
+}
+
+
+footer {
+    margin-top: 0;
+    padding-top: 20px;
+}

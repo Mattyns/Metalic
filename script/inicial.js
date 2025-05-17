@@ -19,9 +19,12 @@ function hidemenu() {
 
 
 
+var btn_agende = document.querySelector('.agende__button')
 var btn_redirect = document.querySelector('.button--redirect')
 var email1 = document.querySelector('.email1')
 var exit_form = document.querySelector('.exit__form')
+
+btn_agende.addEventListener('click', displayemail1)
 btn_redirect.addEventListener('click', displayemail1)
 exit_form.addEventListener('click', exitemail)
 
@@ -33,3 +36,6 @@ function displayemail1() {
 function exitemail() {
     email1.style.display = 'none'
 }
+
+
+
