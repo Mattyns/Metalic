@@ -45,16 +45,20 @@
                     <input type="tel" name="f__phone" id="f__phone" class="f__text f__textwork" placeholder="Telefone">
 
                     
-                    <select name="cursos" id="cursos" class="seletor">
-                    <option value="" class="seletor__select">Formação</option>
-                    <option value="">Vigilante</option>
-                    <option value="">Reciclagem de Vigilante</option>
-                    <option value="">Escolta Armada</option>
-                    <option value="">Segurança Pessoal Privada</option>
-                    <option value="">Transporte de Valores</option>
-                    <option value="">Monitoramento de Câmeras (CFTV)</option>
-                    <option value=""></option>
-                    </select>
+                    <div class="workus__check">
+                        <h3 class="check__title">Sua(s) formação(ões)</h3>
+                        <div id="interesses">
+                            <div class="opcao" data-value="vigilante">Vigilante</div>
+                            <div class="opcao" data-value="Escolta">Escolta Armada</div>
+                            <div class="opcao" data-value="Segurança pessoal">Segurança Pessoal Privada</div>
+                            <div class="opcao" data-value="Transporte de Valores">Transporte de Valores</div>
+                            <div class="opcao" data-value="Monitoramento">Monitoramento de Câmeras</div>
+                            <div class="opcao" data-value="instalação de A e C">Instalação de Alarmes e Câmeras</div>
+                            <div class="opcao" data-value="instalação de cercas">Instalação de Cercas Elétricas</div>
+                        </div>
+                    </div>
+
+                    
 
                     <textarea name="f__msg" id="f__msg" class="f__text--2 f__textwork" placeholder="Experiência"></textarea>
                     <input type="submit" class="f__submit" value="ENVIAR">
@@ -100,6 +104,17 @@
                 </section>
             </footer>
 
+
+
+
+    <script>
+        const opcoes = document.querySelectorAll('.opcao');
+        opcoes.forEach(opcao => {
+            opcao.addEventListener('click', () => {
+            opcao.classList.toggle('selecionado');
+        });
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/inicial.js"></script>
     
