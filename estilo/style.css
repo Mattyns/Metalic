@@ -125,7 +125,7 @@ li {
 .menu__visible a {
     color: white;
     font-size: 1.2em;
-    color: var(--cor7);
+    
 }
 
 .menu__visible--special {
@@ -135,11 +135,11 @@ li {
 }
 
 .menu__visible--special a {
-    color: var(--cor7);
+    color: white;
 }
 
 .menu__link--select {
-    color:white !important;
+    color:var(--cor3) !important;
     
 }
 
@@ -590,6 +590,11 @@ footer p {
     header {
         background-color: black;
     }
+
+    .logo {
+        
+        margin-left: 20px;
+    }
     
     .menu {
             display: none;
@@ -610,6 +615,8 @@ footer p {
         border-radius: 50px;
         position: fixed;
         z-index: 2;
+
+        transition: top 0.3s;
         
         
         
@@ -619,6 +626,10 @@ footer p {
         display: flex;
         flex-direction: row;
         color: white;
+    }
+
+    .menu__link--select {
+        color: #123B73;
     }
 
     .menu__link2 {
@@ -639,13 +650,45 @@ footer p {
         
     }
 
+    .menu__link2--select {
+        color: #123B73 !important;
+    }
+
 
     .menu__list--pc  a {
-        color: white !important;
+        color: white ;
+    }
+
+    .menu__pc2 {
+        background-color: rgba(0, 0, 0, 0.798);
+        position: absolute;
+        z-index: 2;
+        left: 6vw;
+        top: 100%;
+        border: 1px solid black;
+        border-top: 0;
+
+        padding: 10px;
+        display: none;
+    }
+
+    .menu__pc2:hover {
+        background-color: black;
+    }
+
+    .pc2__link {
+        color: white;
+        
+    }
+
+    .menu__link2--select {
+        color: var(--cor3) !important;
     }
 
     .heros {
-        height: 60vh;
+        min-height: 340px;
+        height:70vh;
+        
     }
 
     .heros__text {
@@ -663,9 +706,19 @@ footer p {
         margin-left: 100px;
     }
 
+    .button--redirect:hover {
+        transition-duration: 0.8s;
+    }
+
     .email1 {
         top: 80px;
         width: 50vw;
+    }
+
+    .about {
+
+        height: 380px;
+        
     }
 
 
@@ -685,6 +738,89 @@ footer p {
         
     }
 
+    .services__maintitle {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .services__area {
+        
+        grid-template-columns: 50% 50%;
+        width: 45%;
+    }
+
+
+    .services__link {
+        width: 90%;
+        font-size: 0.8em;
+        margin-top: 30px;
+        transition: background-color 1s ease;
+        transition-delay: 0.2;
+        
+        
+        
+    }
+
+    .services__link:hover {
+        background-color: #242e3b70;
+        transition: background-color 1s ease;
+        transition-delay: 0.2;
+    }
+
+    .agende {
+        height: 200px;
+    }
+
+    .agende__card {
+        height: 200px;
+    }
+
+    .agende__text {
+        width: 50%;
+        
+    }
+
+    .agende__button {
+        transition-duration: 0.8;
+    }
+
+    .agende__button:hover {
+        padding: 10px;
+        font-size: 0.9em;
+        border-radius: 40px;
+        transition-duration: 0.8s;
+    }
+
+    /*.client__card {
+        width: 70%;
+    } */
+
+    .client__img--align {
+        
+        margin-left: 40px;
+    }
+
+    .client__msg {
+        
+        margin-right: 40px;
+    }
+
+
+    .menufooter--ini {
+        margin-left: 10%;
+    }
+
+    .redes {
+
+        margin-top: 0;
+        margin-left: 6px;
+    }
+
+    .menufooter {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 5px;
+    }
 
 }
 

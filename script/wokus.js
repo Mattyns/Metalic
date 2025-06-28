@@ -1,35 +1,15 @@
-var btn_agende = document.querySelector('.agende__button')
-var email1 = document.querySelector('.email1')
-var exit_form = document.querySelector('.exit__form')
 
-btn_agende.addEventListener('click', displayemail1)
-exit_form.addEventListener('click', exitemail)
+const opcoes = document.querySelectorAll('.opcao');
+        opcoes.forEach(opcao => {
+            opcao.addEventListener('click', () => {
+            opcao.classList.toggle('selecionado');
+        });
+        });
 
-function displayemail1() {
-    email1.style.display = 'block'
-
-}
-
-function exitemail() {
-    email1.style.display = 'none'
-}
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var btn_agende = document.querySelector('.agende__button');
-    var email1 = document.querySelector('.email1');
-    var exit_form = document.querySelector('.exit__form');
-
-    btn_agende.addEventListener('click', displayemail1);
-    exit_form.addEventListener('click', exitemail);
-
-    function displayemail1() {
-        email1.style.display = 'block';
-    }
-
-    function exitemail() {
-        email1.style.display = 'none';
-    }
+    
 
     // pc
     var pc2 = document.querySelector('.menu__pc2');
@@ -65,5 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
         pc2.style.display = 'none';
         serv.removeEventListener('click', hidesubmenu);
         serv.addEventListener('click', submenu);
+    }
+
+
+    var enviarform = document.querySelector('.f__submit')
+
+    enviarform.addEventListener('submit', e_form)
+
+    function e_form() {
+
+        window.alert('oiii')
+        var email2 = document.querySelector('.email2__form')
+
+        email2.style.display = 'none'
     }
 });

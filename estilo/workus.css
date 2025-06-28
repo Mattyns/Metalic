@@ -86,10 +86,42 @@
     border-radius: 8px;
     margin: 5px;
     cursor: pointer;
-  }
+    text-align: center;
+}
 
-  .selecionado {
+.selecionado {
     background-color: #007bff;
     color: white;
     border-color: #0056b3;
-  }
+}
+
+.f__submit {
+    cursor: pointer;
+}
+
+@media screen and (min-Width:768px) {
+
+    .workus__text {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .email2__form {
+        width: 70%;
+    }
+
+    
+    
+}
+
+@media screen and (min-Width:1024px) {
+    .workus__text {
+        width: 80%;
+    }
+
+    .email2__form {
+        width: 50%;
+        font-family: ;
+    }
+}

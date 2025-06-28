@@ -20,16 +20,36 @@
         <nav class="menu__phone">
             <ul class="menu__visible">
                 <li><a href="index.html" class="menu__link">Home</a></li>
-                <li><a href="#" class="menu__link menu__link--select">Monitoramento</a></li>
-                <li><a href="#" class="menu__link">Rondas</a></li>
-                <li><a href="#" class="menu__link">Segurança Eletrônica</a></li>
-                <li><a href="#" class="menu__link">Controle de Acesso</a></li>
+                <li><a href="monito.html" class="menu__link menu__link--select">Monitoramento</a></li>
+                <li><a href="rondas.html" class="menu__link">Rondas</a></li>
+                <li><a href="security.html" class="menu__link">Segurança Eletrônica</a></li>
+                <li><a href="control.html" class="menu__link">Controle de Acesso</a></li>
             </ul>
             <ul class="menu__visible--special">
-                <li><a href="#" class="menu__link--special">Trabalhe Conosco</a></li>
+                <li><a href="trabalhe.html" class="menu__link--special">Trabalhe Conosco</a></li>
                 <li><a href="#" class="menu__link--special">Nossos Parceiros</a></li>
                 <li><a href="#" class="menu__link--special">Guia de Segurança</a></li>
             </ul>
+        </nav>
+
+        <nav class="menu__pc">
+            <ul class="menu__list--pc">
+                <li class="menu__link2"><a href="index.html">Home</a></li>
+                <li class="menu__link2 menu__link2--special menu__link2--select"><p>Serviços</p> <i class="bi-chevron-compact-down"></i></li>
+                <li class="menu__link2"><a href="trabalhe.html">Trabalhe Conosco</a></li>
+                <li class="menu__link2"><a href="">Nossos Parceiros</a></li>
+                <li class="menu__link2"><a href="">Guia de Segurança</a></li>
+            </ul>
+
+            <div class="menu__pc2">
+                <nav class="pc2__nav">
+                    <li><a href="monito.html" class="pc2__link menu__link2--select">Monitoramento</a></li>
+                    <li><a href="rondas.html" class="pc2__link">Rondas</a></li>
+                    <li><a href="security.html" class="pc2__link">Segurança Eletrônica</a></li>
+                    <li><a href="control.html" class="pc2__link">Controle de Acesso</a></li>
+
+                </nav>
+            </div>
         </nav>
     </header>
 
@@ -39,13 +59,14 @@
                 <h1 class="allservices__title">Monitoramento 24 Horas</h1>
                 <p class="allservices__text--destaque">O serviço de Monitoramento 24 Horas da Metalic Security garante proteção contínua para seu patrimônio, com vigilância ativa dia e noite, todos os dias da semana. Por meio de uma central de monitoramento moderna e equipada, nossa equipe acompanha em tempo real qualquer sinal de alerta proveniente de sistemas de alarme, sensores de presença, cercas elétricas e câmeras de segurança.</p>
             </div>
-            <img src="img/monito.png" alt="Monitoramento" class="allservices__img">
-
-            <p class="allservices__text">Cada ocorrência é tratada com rapidez e precisão, seguindo protocolos específicos de segurança. Ao menor sinal de invasão, tentativa de violação ou situação suspeita, nossa equipe entra em ação, acionando rondas locais, comunicando responsáveis e, quando necessário, as autoridades competentes.</p>
-
-            <p class="allservices__text">Além disso, o cliente conta com acesso remoto às imagens e relatórios por meio de aplicativos ou painéis personalizados, oferecendo mais transparência e controle.</p>
-
-            <p class="allservices__text">Com mais de duas décadas de experiência, a Metalic Security combina tecnologia de ponta, profissionais treinados e resposta ágil, proporcionando tranquilidade para residências, condomínios, comércios e empresas de todos os portes.</p>
+            <div class="allservices__text2">
+                <img src="img/monito.png" alt="Monitoramento" class="allservices__img">
+                <div class="allservices__text--align">
+                    <p class="allservices__text">Cada ocorrência é tratada com rapidez e precisão, seguindo protocolos específicos de segurança. Ao menor sinal de invasão, tentativa de violação ou situação suspeita, nossa equipe entra em ação, acionando rondas locais, comunicando responsáveis e, quando necessário, as autoridades competentes.</p>
+                    <p class="allservices__text">Além disso, o cliente conta com acesso remoto às imagens e relatórios por meio de aplicativos ou painéis personalizados, oferecendo mais transparência e controle.</p>
+                    <p class="allservices__text">Com mais de duas décadas de experiência, a Metalic Security combina tecnologia de ponta, profissionais treinados e resposta ágil, proporcionando tranquilidade para residências, condomínios, comércios e empresas de todos os portes.</p>
+                </div>
+            </div>
         </section>
 
         <section class="agende">
@@ -76,11 +97,11 @@
 
 
     <footer>
-                <div class="logo__footer">
-                    <img src="img/Metalic3.png" alt="logo" class="logo__imgfooter">
-                </div>
-                
-                <section class="social">
+                <div class="menufooter--ini">
+                    <div class="logo__footer">
+                        <img src="img/Metalic3.png" alt="logo" class="logo__imgfooter">
+                    
+                    </div>
                     <p class="adress"> Rua das Palmeiras, 1200 – Centro, São Paulo, SP</p>
                     <p class="phone">(11) 3456-7890</p>
                     <div class="redes">
@@ -89,21 +110,28 @@
                         <a href="#"><i class="bi-twitter"></i></a>
                         <a href="#"><i class="bi-linkedin"></i></a>
                     </div>
+                </div>
+                
+                <section class="social">
 
                     <nav class="menufooter">
-                        <h2>Serviços</h2>
-                        <ul>
-                            <li><a href="#">Monitoramento</a></li>
-                            <li><a href="#">Rondas</a></li>
-                            <li><a href="#">Segurança Eletrônica</a></li>
-                            <li><a href="#">Controle de Acesso</a></li>
-                        </ul>
-                        <h2>Outros</h2>
-                        <ul>
-                            <li><a href="#">Trabalhe Conosco</a></li>
-                            <li><a href="#">Nossos Parceiros</a></li>
-                            <li><a href="#">Guia de Segurança Básico</a></li>
-                        </ul>
+                        <div class="menufooter--align">
+                            <h2 class="menufooter__title">Serviços</h2>
+                            <ul class="menufooter__list">
+                                <li><a href="monito.html">Monitoramento</a></li>
+                                <li><a href="rondas.html">Rondas</a></li>
+                                <li><a href="security.html">Segurança Eletrônica</a></li>
+                                <li><a href="control.html">Controle de Acesso</a></li>
+                            </ul>
+                        </div>
+                        <div class="menufooter2--align">
+                            <h2 class="menufooter__title">Outros</h2>
+                            <ul class="menufooter__list">
+                                <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+                                <li><a href="#">Nossos Parceiros</a></li>
+                                <li><a href="#">Guia de Segurança Básico</a></li>
+                            </ul>
+                        </div>
                     </nav>
 
                 </section>

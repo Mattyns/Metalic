@@ -45,3 +45,38 @@
 .email1 {
     color: black;
 }
+
+
+/*tablet: 768px*/
+
+@media screen and (min-Width:768px) {
+
+    .about__tittle--com {
+        margin-left: 20px;
+    }
+
+    .about__subtittle--com {
+        margin-left: 20px;
+    }
+
+    .about__text--com {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .more__title {
+        margin-left: 35px;
+    }
+
+    .more__text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .more__img {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    
+}
